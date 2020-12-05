@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div>
-      <Link to="/">Home</Link>
+    <div className="nav">
+      <h3>Movie Search!</h3>
     </div>
   );
 };

@@ -28,11 +28,14 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="home">
       <NavBar />
-      <form onSubmit={getMovie}>
-        <input type="text" onChange={handleChange} />
-      </form>
+      <div className="input">
+        <form onSubmit={getMovie}>
+          <label>Enter Movie Title Here</label>
+          <input type="text" onChange={handleChange} className="input" />
+        </form>
+      </div>
       <Switch>
         <Route
           exact
